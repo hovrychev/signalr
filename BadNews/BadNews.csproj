@@ -7,7 +7,14 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="5.0.4" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="_Imports.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 </Project>
